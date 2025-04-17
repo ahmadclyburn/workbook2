@@ -18,7 +18,7 @@ public class NameApp {
         if (suffix.equals("yes")) {
             System.out.println("which suffix suits you? ");
             String suffixGiver = scanner.next();
-            System.out.println("Name- " + suffixGiver + ". "+ firstName + " " + middleInitial + " " +lastName);
+            System.out.println("Name- " + firstName + " " + middleInitial + " " +lastName + suffixGiver + ". ");
         }else if (suffix.equals("no")){
                 System.out.println("Name- " + firstName + " " + middleInitial + " " +lastName);
             }
