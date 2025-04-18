@@ -4,31 +4,36 @@ public class CellPhoneApplication {
     public static void main(String[] args) {
         System.out.println("provide the following information.");
 
+        CellPhone phone = new CellPhone();
+
         Scanner input = new Scanner(System.in);
 
         System.out.println("serial number: ");
-        CellPhone.setSerialNumber((input.toString));
+        phone.setSerialNumber(input.nextLine());
+
         System.out.println("model: ");
-        phone.setSerialNumber((input.toString));
+        phone.setModel(input.nextLine());
+
         System.out.println("carrier: ");
-        phone.setSerialNumber((input.toString));
+        phone.setCarrier(input.nextLine());
+
         System.out.println("phone number: ");
-        phone.setSerialNumber((input.toString));
+        phone.setPhoneNumber(input.nextLine());
+
         System.out.println("owner: ");
-        phone.setSerialNumber((input.toString));
+        phone.setOwner(input.nextLine());
 
-        CellPhone phone = new CellPhone();
 
-        phone.setSerialNumber((input.toString));
-        phone.setModel();
-        phone.setCarrier();
-        phone.setPhoneNumber();
-        phone.setOwner();
-        System.out.println(phone.getSerialNumber());
-        System.out.println(phone.getModel());
-        System.out.println(phone.getCarrier());
-        System.out.println(phone.getPhoneNumber());
-        System.out.println(phone.getOwner());
+//        phone.setSerialNumber();
+//        phone.setModel();
+//        phone.setCarrier();
+//        phone.setPhoneNumber();
+//        phone.setOwner();
+        System.out.println("serial numer: " + phone.getSerialNumber());
+        System.out.println("Model: " + phone.getModel());
+        System.out.println("Carrier: " + phone.getCarrier());
+        System.out.println("Phone Number:" + phone.getPhoneNumber());
+        System.out.println("Owner: " + phone.getOwner());
 
 
     }
