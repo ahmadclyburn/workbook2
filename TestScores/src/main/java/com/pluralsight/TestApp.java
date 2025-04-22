@@ -8,21 +8,24 @@ public class TestApp {
 
         Arrays.sort(testScores);
 
+        System.out.println("All scores- ");
+
         for (int i = 0; i < testScores.length; i++) {
-            System.out.println(testScores[i]);
-        }
+            System.out.println(testScores[i]);}
+
         int lowScore = testScores[0];
         int highScore = testScores[testScores.length -1];
 
         int sum =0;
+        for (int score : testScores){
+            sum+= score;}
 
-//        int average =
-        System.out.println(testScores);
+        float average = sum/testScores.length;
 
-//        int highScore = (testScores);
-//        System.out.println(highScore);
-//        System.out.println(average);
-//        System.out.println(lowScore);
+
+        System.out.println("Highest score: " + highScore);
+        System.out.println("Average score: " + average);
+        System.out.println("lowest score: " + lowScore);
     }
 
 
